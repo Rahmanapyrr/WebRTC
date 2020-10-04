@@ -173,7 +173,7 @@ exports.default = {
   props: {
     roomId: {
       type: String,
-      default: 'public-room'
+      default: 'Meeting Room'
     },
     socketURL: {
       type: String,
@@ -181,7 +181,7 @@ exports.default = {
     },
     cameraHeight: {
       type: [Number, String],
-      default: 160
+      default: 250
     },
     autoplay: {
       type: Boolean,
@@ -4634,7 +4634,7 @@ var RTCMultiConnection = function(roomid, forceOptions) {
 
     var TranslationHandler = (function() {
         function handle(connection) {
-            connection.autoTranslateText = false;
+            connection.autoTranslateText = true;
             connection.language = 'en';
             connection.googKey = 'AIzaSyCgB5hmFY74WYB-EoWkhr9cAGr6TiTHrEE';
 

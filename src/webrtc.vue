@@ -28,7 +28,7 @@
     props: {
       roomId: {
         type: String,
-        default: 'public-room'
+        default: 'Meeting Room'
       },
       socketURL: {
         type: String,
@@ -226,19 +226,20 @@
       }
     }
   };
+  
 </script>
 <style scoped>
   .video-list {
-    background: whitesmoke;
+    background: rgb(228, 191, 69);
     height: auto;
   }
 
     .video-list div {
-      padding: 0px;
+      padding: 5px;
     }
 
   .video-item {
-    background: #c5c4c4;
+    background: #c3e9f0;
     display: inline-block;
   }
 </style>
